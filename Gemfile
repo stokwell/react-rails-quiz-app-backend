@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 5.0.2'
 
-
 gem 'active_model_serializers'
 
 gem 'responders'
@@ -12,6 +11,8 @@ gem 'spring', :group => :development
 gem 'listen', :group => :development
 
 gem 'pg'
+
+gem 'rack-cors', :require => 'rack/cors'
 
 
 
