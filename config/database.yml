@@ -27,8 +27,8 @@ development:
   database: spa_backend-api_development
 
 test:
-  <<: *default
-  database: spa_backend-api_test
+  adapter: postgresql
+  database: travis_ci_test
 
 production:
   <<: *default
