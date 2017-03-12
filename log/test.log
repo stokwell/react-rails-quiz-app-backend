@@ -1490,3 +1490,1110 @@ Processing by Api::V1::PostsController#destroy as JSON
   [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
 Completed 204 No Content in 3ms (ActiveRecord: 1.1ms)
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (7.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (48.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 14:53:12 UTC], ["updated_at", 2017-03-12 14:53:12 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 15:53:12 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 290, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 14:53:12", updated_at: "2017-03-12 14:53:12">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (53.99ms)
+Completed 200 OK in 191ms (Views: 187.6ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 14:53:13 UTC], ["updated_at", 2017-03-12 14:53:13 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/291" for 127.0.0.1 at 2017-03-12 15:53:13 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"291"}
+  [1m[36mPost Load (51.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 291], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.66ms)
+Completed 200 OK in 114ms (Views: 28.0ms | ActiveRecord: 52.5ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:53:13 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 14:53:13 UTC], ["updated_at", 2017-03-12 14:53:13 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.46ms)
+Completed 201 Created in 6ms (Views: 1.1ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 14:53:13 UTC], ["updated_at", 2017-03-12 14:53:13 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/293" for 127.0.0.1 at 2017-03-12 15:53:13 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"293"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 293], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 293]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 6ms (ActiveRecord: 2.3ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 14:55:16 UTC], ["updated_at", 2017-03-12 14:55:16 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 15:55:16 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 303, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 14:55:16", updated_at: "2017-03-12 14:55:16">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (13.27ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 14:55:17 UTC], ["updated_at", 2017-03-12 14:55:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/304" for 127.0.0.1 at 2017-03-12 15:55:17 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"304"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 304], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.64ms)
+Completed 200 OK in 99ms (Views: 41.9ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:55:17 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 14:55:17 UTC], ["updated_at", 2017-03-12 14:55:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.49ms)
+Completed 201 Created in 5ms (Views: 1.2ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 14:55:17 UTC], ["updated_at", 2017-03-12 14:55:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/306" for 127.0.0.1 at 2017-03-12 15:55:17 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"306"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 306], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 306]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 15:56:02 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 316, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 14:56:02", updated_at: "2017-03-12 14:56:02">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (24.41ms)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/317" for 127.0.0.1 at 2017-03-12 15:56:02 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"317"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 317], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (1.03ms)
+Completed 200 OK in 31ms (Views: 4.9ms | ActiveRecord: 0.7ms)
+  [1m[35m (4.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:56:02 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.45ms)
+Completed 201 Created in 6ms (Views: 1.1ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (41.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/319" for 127.0.0.1 at 2017-03-12 15:56:02 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"319"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 319], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 319]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:56:02 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (19.8ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 422 Unprocessable Entity in 155ms (Views: 4.7ms | ActiveRecord: 20.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:56:02 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:56:02 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 13", "body"=>"Question text 13"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 13"], ["body", "Question text 13"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.42ms)
+Completed 201 Created in 4ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:56:02 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 14", "body"=>"Question text 14"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 14"], ["body", "Question text 14"], ["created_at", 2017-03-12 14:56:02 UTC], ["updated_at", 2017-03-12 14:56:02 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.4ms)
+Completed 201 Created in 4ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 15:57:05 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 331, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 14:57:05", updated_at: "2017-03-12 14:57:05">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (3.36ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/332" for 127.0.0.1 at 2017-03-12 15:57:05 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"332"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 332], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.57ms)
+Completed 200 OK in 58ms (Views: 2.7ms | ActiveRecord: 24.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:57:05 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.41ms)
+Completed 201 Created in 5ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 14:57:05 UTC], ["updated_at", 2017-03-12 14:57:05 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/334" for 127.0.0.1 at 2017-03-12 15:57:05 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"334"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 334], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 334]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:57:05 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 422 Unprocessable Entity in 85ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+  [1m[35m (2.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:57:06 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:57:06 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 13", "body"=>"Question text 13"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (19.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 13"], ["body", "Question text 13"], ["created_at", 2017-03-12 14:57:06 UTC], ["updated_at", 2017-03-12 14:57:06 UTC]]
+  [1m[35m (12.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.48ms)
+Completed 201 Created in 41ms (Views: 1.3ms | ActiveRecord: 31.9ms)
+  [1m[35m (4.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 15:57:06 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 14", "body"=>"Question text 14"}}
+  [1m[35m (1.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 14"], ["body", "Question text 14"], ["created_at", 2017-03-12 14:57:06 UTC], ["updated_at", 2017-03-12 14:57:06 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.44ms)
+Completed 201 Created in 8ms (Views: 1.2ms | ActiveRecord: 2.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 16:07:17 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 346, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 15:07:17", updated_at: "2017-03-12 15:07:17">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (23.04ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/347" for 127.0.0.1 at 2017-03-12 16:07:17 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"347"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 347], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.76ms)
+Completed 200 OK in 49ms (Views: 3.8ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:07:17 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (1.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (1.7ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.49ms)
+Completed 201 Created in 9ms (Views: 1.3ms | ActiveRecord: 3.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/349" for 127.0.0.1 at 2017-03-12 16:07:17 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"349"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 349], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 349]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.3ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:07:17 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.31ms)
+Completed 422 Unprocessable Entity in 112ms (Views: 6.0ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:07:17 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.7ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:07:17 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 13", "body"=>"Question text 13"}}
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 13"], ["body", "Question text 13"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.75ms)
+Completed 201 Created in 8ms (Views: 2.3ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:07:17 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 14", "body"=>"Question text 14"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 14"], ["body", "Question text 14"], ["created_at", 2017-03-12 15:07:17 UTC], ["updated_at", 2017-03-12 15:07:17 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (1.0ms)
+Completed 201 Created in 13ms (Views: 1.7ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (44.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 15:09:43 UTC], ["updated_at", 2017-03-12 15:09:43 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 16:09:43 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 361, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 15:09:43", updated_at: "2017-03-12 15:09:43">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (20.64ms)
+Completed 200 OK in 185ms (Views: 181.7ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 15:09:44 UTC], ["updated_at", 2017-03-12 15:09:44 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/362" for 127.0.0.1 at 2017-03-12 16:09:44 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"362"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 362], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.96ms)
+Completed 200 OK in 68ms (Views: 21.4ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:09:44 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 15:09:44 UTC], ["updated_at", 2017-03-12 15:09:44 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.51ms)
+Completed 201 Created in 8ms (Views: 1.3ms | ActiveRecord: 1.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 15:09:44 UTC], ["updated_at", 2017-03-12 15:09:44 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/364" for 127.0.0.1 at 2017-03-12 16:09:44 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"364"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 364], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 364]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.2ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:09:44 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.24ms)
+Completed 422 Unprocessable Entity in 118ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:09:44 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 0.7ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:09:44 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 13", "body"=>"Question text 13"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 13"], ["body", "Question text 13"], ["created_at", 2017-03-12 15:09:44 UTC], ["updated_at", 2017-03-12 15:09:44 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.43ms)
+Completed 201 Created in 5ms (Views: 1.0ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:09:44 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 14", "body"=>"Question text 14"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 14"], ["body", "Question text 14"], ["created_at", 2017-03-12 15:09:44 UTC], ["updated_at", 2017-03-12 15:09:44 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.41ms)
+Completed 201 Created in 4ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:11:45 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 15:11:45 UTC], ["updated_at", 2017-03-12 15:11:45 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (13.52ms)
+Completed 201 Created in 102ms (Views: 45.7ms | ActiveRecord: 7.3ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:11:45 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 123ms (Views: 4.0ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:11:45 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 422 Unprocessable Entity in 6ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (34.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (2.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 16:13:47 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 377, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 15:13:47", updated_at: "2017-03-12 15:13:47">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (13.25ms)
+Completed 200 OK in 64ms (Views: 61.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/378" for 127.0.0.1 at 2017-03-12 16:13:47 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"378"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 378], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.74ms)
+Completed 200 OK in 32ms (Views: 5.0ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:13:47 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.51ms)
+Completed 201 Created in 6ms (Views: 1.2ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/380" for 127.0.0.1 at 2017-03-12 16:13:47 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"380"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 380], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 380]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:13:47 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.25ms)
+Completed 422 Unprocessable Entity in 132ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:13:47 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:13:47 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 13", "body"=>"Question text 13"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 13"], ["body", "Question text 13"], ["created_at", 2017-03-12 15:13:47 UTC], ["updated_at", 2017-03-12 15:13:47 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.46ms)
+Completed 201 Created in 4ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:13:48 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 14", "body"=>"Question text 14"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 14"], ["body", "Question text 14"], ["created_at", 2017-03-12 15:13:48 UTC], ["updated_at", 2017-03-12 15:13:48 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.4ms)
+Completed 201 Created in 4ms (Views: 1.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (31.0ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 16:18:59 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 392, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 15:18:59", updated_at: "2017-03-12 15:18:59">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (23.01ms)
+Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/393" for 127.0.0.1 at 2017-03-12 16:18:59 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"393"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 393], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.74ms)
+Completed 200 OK in 50ms (Views: 3.6ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:18:59 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.5ms)
+Completed 201 Created in 7ms (Views: 1.1ms | ActiveRecord: 2.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 15:18:59 UTC], ["updated_at", 2017-03-12 15:18:59 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/395" for 127.0.0.1 at 2017-03-12 16:18:59 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"395"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 395], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 395]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 7ms (ActiveRecord: 1.7ms)
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:18:59 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 153ms (Views: 4.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:00 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.22ms)
+Completed 422 Unprocessable Entity in 5ms (Views: 0.7ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:00 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 13", "body"=>"Question text 13"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 13"], ["body", "Question text 13"], ["created_at", 2017-03-12 15:19:00 UTC], ["updated_at", 2017-03-12 15:19:00 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.41ms)
+Completed 201 Created in 4ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:00 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 14", "body"=>"Question text 14"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 14"], ["body", "Question text 14"], ["created_at", 2017-03-12 15:19:00 UTC], ["updated_at", 2017-03-12 15:19:00 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.41ms)
+Completed 201 Created in 4ms (Views: 1.0ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 15:19:41 UTC], ["updated_at", 2017-03-12 15:19:41 UTC]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:41 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 407, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 15:19:41", updated_at: "2017-03-12 15:19:41">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (13.39ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 1.3ms)
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 15:19:42 UTC], ["updated_at", 2017-03-12 15:19:42 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/408" for 127.0.0.1 at 2017-03-12 16:19:42 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"408"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 408], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.76ms)
+Completed 200 OK in 46ms (Views: 19.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:42 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 15:19:42 UTC], ["updated_at", 2017-03-12 15:19:42 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.52ms)
+Completed 201 Created in 9ms (Views: 2.6ms | ActiveRecord: 2.3ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 15:19:42 UTC], ["updated_at", 2017-03-12 15:19:42 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/410" for 127.0.0.1 at 2017-03-12 16:19:42 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"410"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 410], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 410]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 3ms (ActiveRecord: 1.1ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:42 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 422 Unprocessable Entity in 105ms (Views: 4.6ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:42 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 422 Unprocessable Entity in 4ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:42 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 13", "body"=>"Question text 13"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 13"], ["body", "Question text 13"], ["created_at", 2017-03-12 15:19:42 UTC], ["updated_at", 2017-03-12 15:19:42 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.45ms)
+Completed 201 Created in 5ms (Views: 1.1ms | ActiveRecord: 1.2ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:19:42 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 14", "body"=>"Question text 14"}}
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 14"], ["body", "Question text 14"], ["created_at", 2017-03-12 15:19:42 UTC], ["updated_at", 2017-03-12 15:19:42 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.41ms)
+Completed 201 Created in 4ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 1"], ["body", "Question text 1"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 2"], ["body", "Question text 2"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (4.5ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 3"], ["body", "Question text 3"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 4"], ["body", "Question text 4"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 5"], ["body", "Question text 5"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 6"], ["body", "Question text 6"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (4.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 7"], ["body", "Question text 7"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 8"], ["body", "Question text 8"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 9"], ["body", "Question text 9"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 10"], ["body", "Question text 10"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts" for 127.0.0.1 at 2017-03-12 16:21:57 +0100
+Processing by Api::V1::PostsController#index as JSON
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."id" ASC[0m
+No serializer found for resource: #<Post id: 422, title: "Question 10", body: "Question text 10", username: nil, created_at: "2017-03-12 15:21:57", updated_at: "2017-03-12 15:21:57">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (22.38ms)
+Completed 200 OK in 61ms (Views: 57.4ms | ActiveRecord: 1.5ms)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 11"], ["body", "Question text 11"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/api/posts/423" for 127.0.0.1 at 2017-03-12 16:21:57 +0100
+Processing by Api::V1::PostsController#show as JSON
+  Parameters: {"id"=>"423"}
+  [1m[36mPost Load (3.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 423], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.68ms)
+Completed 200 OK in 77ms (Views: 16.9ms | ActiveRecord: 5.1ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:21:57 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"New Post", "body"=>"New Body"}}
+  [1m[35m (1.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "New Post"], ["body", "New Body"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.59ms)
+Completed 201 Created in 11ms (Views: 1.4ms | ActiveRecord: 2.8ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 12"], ["body", "Question text 12"], ["created_at", 2017-03-12 15:21:57 UTC], ["updated_at", 2017-03-12 15:21:57 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started DELETE "/api/posts/425" for 127.0.0.1 at 2017-03-12 16:21:57 +0100
+Processing by Api::V1::PostsController#destroy as JSON
+  Parameters: {"id"=>"425"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 425], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 425]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 204 No Content in 4ms (ActiveRecord: 1.4ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:21:57 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.6ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.17ms)
+Completed 422 Unprocessable Entity in 113ms (Views: 6.7ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:21:57 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"nothing"=>"here"}}
+Unpermitted parameter: nothing
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (17.16ms)
+Completed 422 Unprocessable Entity in 38ms (Views: 20.5ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:21:58 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 13", "body"=>"Question text 13"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 13"], ["body", "Question text 13"], ["created_at", 2017-03-12 15:21:58 UTC], ["updated_at", 2017-03-12 15:21:58 UTC]]
+  [1m[35m (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (0.49ms)
+Completed 201 Created in 9ms (Views: 3.0ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/posts" for 127.0.0.1 at 2017-03-12 16:21:58 +0100
+Processing by Api::V1::PostsController#create as JSON
+  Parameters: {"post"=>{"title"=>"Question 14", "body"=>"Question text 14"}}
+  [1m[35m (0.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Question 14"], ["body", "Question text 14"], ["created_at", 2017-03-12 15:21:58 UTC], ["updated_at", 2017-03-12 15:21:58 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Post (1.29ms)
+Completed 201 Created in 34ms (Views: 2.2ms | ActiveRecord: 1.5ms)
+  [1m[35m (4.5ms)[0m  [1m[31mROLLBACK[0m
