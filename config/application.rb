@@ -31,8 +31,8 @@ module SpaBackendApi
                        view_spec: false,
                        helper_specs: false,
                        routing_specs: false,
-                       request_specs: false,
-                       controller_specs: true
+                       request_specs: true,
+                       controller_specs: false
       q.fixture_replacement :factory_girl, dir: 'spec/factories' 
 
     end
