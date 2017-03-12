@@ -48,11 +48,14 @@ RSpec.describe "PostsController", :type => :request  do
     end
 
     context 'when comment params are valid' do
-      before(:each) { post '/api/posts', { post: post_params }, headers }
+      before(:each) do 
+        @post_attributes = FactoryGirl.attributes_for :post
+        post '/api/posts', { post: @post_attributes }, headers
+      end
 
       it 'creates post and responds with it' do
-      #не знаю как проверить что возвращается тот пост который был создан,
-      # может и не нужно это проверять
+        post_response = JSON.parse(response.body, symbolize_names: true)
+        expect(post_response[:body]).to eql @post_attributes[:body]
       end
 
       it { expect(response).to have_http_status(201) }
