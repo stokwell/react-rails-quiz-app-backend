@@ -18,7 +18,7 @@ class Api::V1::PostsController < ApplicationController
     end
   end
 
-  def destoy
+  def destroy
     @post = Post.find(params[:id])
     @post.destroy
     respond_with @post

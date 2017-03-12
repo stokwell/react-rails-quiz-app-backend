@@ -24,5 +24,17 @@ module SpaBackendApi
         resource '*', :headers => :any, :methods => [:get, :post, :options]
       end
     end
+
+    config.generators do |q|
+      q.test_framework :rspec,
+                       fixtures: true,
+                       view_spec: false,
+                       helper_specs: false,
+                       routing_specs: false,
+                       request_specs: false,
+                       controller_specs: true
+      q.fixture_replacement :factory_girl, dir: 'spec/factories' 
+
+    end
   end
 end
