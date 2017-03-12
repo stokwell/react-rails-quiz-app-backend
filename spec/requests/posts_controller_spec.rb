@@ -13,7 +13,6 @@ RSpec.describe "PostsController", :type => :request  do
   end
   
   describe 'GET #show' do 
-    @post_attributes = FactoryGirl.attributes_for :post
     it 'sends a specific post' do
       post = FactoryGirl.create(:post)    
       get "/api/posts/#{post.id}"
