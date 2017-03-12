@@ -6,17 +6,21 @@ RSpec.describe "PostsController", :type => :request  do
     it 'sends a list of posts' do 
       FactoryGirl.create_list(:post, 10)
       get '/api/posts'
-      json = JSON.parse(response.body)
+      posts_json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_success
+      expect(posts_json.length).to eq(10)
     end
   end
   
-  describe 'GET #show' do   
+  describe 'GET #show' do 
+    @post_attributes = FactoryGirl.attributes_for :post
     it 'sends a specific post' do
       post = FactoryGirl.create(:post)    
       get "/api/posts/#{post.id}"
-      json = JSON.parse(response.body)
+      post_json = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_success
+      #нужно проверить тело ответа, не знаю как, не проходят тесты. может надо
+      # serializer настроить
     end
   end  
 
