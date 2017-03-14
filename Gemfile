@@ -14,6 +14,10 @@ gem 'pg'
 
 gem 'rack-cors', :require => 'rack/cors'
 
+gem 'dotenv'
+
+gem 'dotenv-deployment', require: 'dotenv/deployment'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
@@ -21,6 +25,13 @@ end
 
 group :test do 
   gem 'shoulda-matchers', require: false
+end
+
+group :development do 
+  gem 'capistrano', require: false
+  gem 'capistrano-bundle', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rvm', require: false
 end
 
 # To use ActiveModel has_secure_password
