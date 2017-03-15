@@ -16,7 +16,9 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'dotenv'
 
+
 gem 'dotenv-rails', require: 'dotenv/rails'
+
 
 group :development, :test do
   gem 'rspec-rails'
