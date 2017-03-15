@@ -16,7 +16,9 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'dotenv'
 
-gem 'dotenv-deployment', require: 'dotenv/deployment'
+
+gem 'dotenv-rails', require: 'dotenv/rails'
+
 
 group :development, :test do
   gem 'rspec-rails'
@@ -29,9 +31,15 @@ end
 
 group :development do 
   gem 'capistrano', require: false
-  gem 'capistrano-bundle', require: false
+  gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-rvm', require: false
+  gem 'capistrano3-puma', require: false
+end
+
+
+group :production do 
+  gem 'puma'
 end
 
 # To use ActiveModel has_secure_password
