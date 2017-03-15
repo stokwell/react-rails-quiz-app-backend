@@ -52,8 +52,6 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
-    capistrano-bundle (0.0.5)
-      capistrano (>= 3.1)
     capistrano-bundler (1.2.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
@@ -179,7 +177,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   capistrano
-  capistrano-bundle
+  capistrano-bundler
   capistrano-rails
   capistrano-rvm
   dotenv
