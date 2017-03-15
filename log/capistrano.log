@@ -2912,3 +2912,204 @@ the current version, ruby 2.1.10p492
 /home/deployer/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
 /home/deployer/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
  DEBUG [83741476] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-15 12:47:48 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [63a49748] Running [ -d ~/.rvm ] as deployer@207.154.238.124
+ DEBUG [63a49748] Command: [ -d ~/.rvm ]
+ DEBUG [63a49748] Finished in 1.046 seconds with exit status 0 (successful).
+ DEBUG [447540e4] Running ~/.rvm/bin/rvm version as deployer@207.154.238.124
+ DEBUG [447540e4] Command: ~/.rvm/bin/rvm version
+ DEBUG [447540e4] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [447540e4] Finished in 1.287 seconds with exit status 0 (successful).
+ DEBUG [19f68d18] Running ~/.rvm/bin/rvm current as deployer@207.154.238.124
+ DEBUG [19f68d18] Command: ~/.rvm/bin/rvm current
+ DEBUG [19f68d18] 	ruby-2.3.1
+ DEBUG [19f68d18] Finished in 1.114 seconds with exit status 0 (successful).
+ DEBUG [7b942497] Running ~/.rvm/bin/rvm default do ruby --version as deployer@207.154.238.124
+ DEBUG [7b942497] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [7b942497] 	ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+ DEBUG [7b942497] Finished in 0.574 seconds with exit status 0 (successful).
+  INFO [98fe60ba] Running /usr/bin/env mkdir -p /tmp as deployer@207.154.238.124
+ DEBUG [98fe60ba] Command: /usr/bin/env mkdir -p /tmp
+  INFO [98fe60ba] Finished in 1.021 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-spa_backend-production-vitalylyapunov.sh 0.0%
+  INFO Uploading /tmp/git-ssh-spa_backend-production-vitalylyapunov.sh 100.0%
+  INFO [3c347c88] Running /usr/bin/env chmod 700 /tmp/git-ssh-spa_backend-production-vitalylyapunov.sh as deployer@207.154.238.124
+ DEBUG [3c347c88] Command: /usr/bin/env chmod 700 /tmp/git-ssh-spa_backend-production-vitalylyapunov.sh
+  INFO [3c347c88] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [a369bd25] Running /usr/bin/env git ls-remote git@github.com:stokwell/spa_backend.git HEAD as deployer@207.154.238.124
+ DEBUG [a369bd25] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-spa_backend-production-vitalylyapunov.sh" ; /usr/bin/env git ls-remote git@github.com:stokwell/spa_backend.git HEAD )
+ DEBUG [a369bd25] 	f7370252561eb24febdb66eb27b4e95ba07956ed	HEAD
+  INFO [a369bd25] Finished in 1.355 seconds with exit status 0 (successful).
+  INFO [0861680d] Running /usr/bin/env mkdir -p /home/deployer/spa_backend/shared /home/deployer/spa_backend/releases as deployer@207.154.238.124
+ DEBUG [0861680d] Command: /usr/bin/env mkdir -p /home/deployer/spa_backend/shared /home/deployer/spa_backend/releases
+  INFO [0861680d] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [42c1ed3e] Running /usr/bin/env mkdir -p /home/deployer/spa_backend/shared/log /home/deployer/spa_backend/shared/tmp/pids /home/deployer/spa_backend/shared/tmp/cache /home/deployer/spa_backend/shared/tmp/sockets /home/deployer/spa_backend/shared/public/system /home/deployer/spa_backend/shared/vendor/bunble /home/deployer/spa_backend/shared/public/assets as deployer@207.154.238.124
+ DEBUG [42c1ed3e] Command: /usr/bin/env mkdir -p /home/deployer/spa_backend/shared/log /home/deployer/spa_backend/shared/tmp/pids /home/deployer/spa_backend/shared/tmp/cache /home/deployer/spa_backend/shared/tmp/sockets /home/deployer/spa_backend/shared/public/system /home/deployer/spa_backend/shared/vendor/bunble /home/deployer/spa_backend/shared/public/assets
+  INFO [42c1ed3e] Finished in 0.072 seconds with exit status 0 (successful).
+  INFO [0682c9b7] Running /usr/bin/env mkdir -p /home/deployer/spa_backend/shared/config /home/deployer/spa_backend/shared as deployer@207.154.238.124
+ DEBUG [0682c9b7] Command: /usr/bin/env mkdir -p /home/deployer/spa_backend/shared/config /home/deployer/spa_backend/shared
+  INFO [0682c9b7] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [4622cf24] Running [ -f /home/deployer/spa_backend/shared/config/database.yml ] as deployer@207.154.238.124
+ DEBUG [4622cf24] Command: [ -f /home/deployer/spa_backend/shared/config/database.yml ]
+ DEBUG [4622cf24] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [dd6b8784] Running [ -f /home/deployer/spa_backend/shared/.env ] as deployer@207.154.238.124
+ DEBUG [dd6b8784] Command: [ -f /home/deployer/spa_backend/shared/.env ]
+ DEBUG [dd6b8784] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [5106a6a4] Running [ -f /home/deployer/spa_backend/current/REVISION ] as deployer@207.154.238.124
+ DEBUG [5106a6a4] Command: [ -f /home/deployer/spa_backend/current/REVISION ]
+ DEBUG [5106a6a4] Finished in 0.067 seconds with exit status 1 (failed).
+ DEBUG [121cedbb] Running [ -f /home/deployer/spa_backend/repo/HEAD ] as deployer@207.154.238.124
+ DEBUG [121cedbb] Command: [ -f /home/deployer/spa_backend/repo/HEAD ]
+ DEBUG [121cedbb] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deployer/spa_backend/repo
+ DEBUG [5d798d64] Running if test ! -d /home/deployer/spa_backend/repo; then echo "Directory does not exist '/home/deployer/spa_backend/repo'" 1>&2; false; fi as deployer@207.154.238.124
+ DEBUG [5d798d64] Command: if test ! -d /home/deployer/spa_backend/repo; then echo "Directory does not exist '/home/deployer/spa_backend/repo'" 1>&2; false; fi
+ DEBUG [5d798d64] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [5171b7b9] Running /usr/bin/env git remote set-url origin git@github.com:stokwell/spa_backend.git as deployer@207.154.238.124
+ DEBUG [5171b7b9] Command: cd /home/deployer/spa_backend/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-spa_backend-production-vitalylyapunov.sh" ; /usr/bin/env git remote set-url origin git@github.com:stokwell/spa_backend.git )
+  INFO [5171b7b9] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [8725076f] Running /usr/bin/env git remote update --prune as deployer@207.154.238.124
+ DEBUG [8725076f] Command: cd /home/deployer/spa_backend/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-spa_backend-production-vitalylyapunov.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8725076f] 	Fetching origin
+ DEBUG [8725076f] 	From github.com:stokwell/spa_backend
+ DEBUG [8725076f] 	   2488bd5..f737025  master     -> master
+  INFO [8725076f] Finished in 1.550 seconds with exit status 0 (successful).
+ DEBUG [5f6282ea] Running if test ! -d /home/deployer/spa_backend/repo; then echo "Directory does not exist '/home/deployer/spa_backend/repo'" 1>&2; false; fi as deployer@207.154.238.124
+ DEBUG [5f6282ea] Command: if test ! -d /home/deployer/spa_backend/repo; then echo "Directory does not exist '/home/deployer/spa_backend/repo'" 1>&2; false; fi
+ DEBUG [5f6282ea] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [9a739046] Running /usr/bin/env mkdir -p /home/deployer/spa_backend/releases/20170315114755 as deployer@207.154.238.124
+ DEBUG [9a739046] Command: cd /home/deployer/spa_backend/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-spa_backend-production-vitalylyapunov.sh" ; /usr/bin/env mkdir -p /home/deployer/spa_backend/releases/20170315114755 )
+  INFO [9a739046] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [6d5cbf57] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/spa_backend/releases/20170315114755 as deployer@207.154.238.124
+ DEBUG [6d5cbf57] Command: cd /home/deployer/spa_backend/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-spa_backend-production-vitalylyapunov.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deployer/spa_backend/releases/20170315114755 )
+  INFO [6d5cbf57] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [473ff029] Running if test ! -d /home/deployer/spa_backend/repo; then echo "Directory does not exist '/home/deployer/spa_backend/repo'" 1>&2; false; fi as deployer@207.154.238.124
+ DEBUG [473ff029] Command: if test ! -d /home/deployer/spa_backend/repo; then echo "Directory does not exist '/home/deployer/spa_backend/repo'" 1>&2; false; fi
+ DEBUG [473ff029] Finished in 0.065 seconds with exit status 0 (successful).
+ DEBUG [49d2240a] Running /usr/bin/env git rev-list --max-count=1 master as deployer@207.154.238.124
+ DEBUG [49d2240a] Command: cd /home/deployer/spa_backend/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-spa_backend-production-vitalylyapunov.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [49d2240a] 	f7370252561eb24febdb66eb27b4e95ba07956ed
+ DEBUG [49d2240a] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [5e43633b] Running if test ! -d /home/deployer/spa_backend/releases/20170315114755; then echo "Directory does not exist '/home/deployer/spa_backend/releases/20170315114755'" 1>&2; false; fi as deployer@207.154.238.124
+ DEBUG [5e43633b] Command: if test ! -d /home/deployer/spa_backend/releases/20170315114755; then echo "Directory does not exist '/home/deployer/spa_backend/releases/20170315114755'" 1>&2; false; fi
+ DEBUG [5e43633b] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [9dc9a102] Running /usr/bin/env echo "f7370252561eb24febdb66eb27b4e95ba07956ed" >> REVISION as deployer@207.154.238.124
+ DEBUG [9dc9a102] Command: cd /home/deployer/spa_backend/releases/20170315114755 && /usr/bin/env echo "f7370252561eb24febdb66eb27b4e95ba07956ed" >> REVISION
+  INFO [9dc9a102] Finished in 0.073 seconds with exit status 0 (successful).
+  INFO [a3c1639e] Running /usr/bin/env mkdir -p /home/deployer/spa_backend/releases/20170315114755/config /home/deployer/spa_backend/releases/20170315114755 as deployer@207.154.238.124
+ DEBUG [a3c1639e] Command: /usr/bin/env mkdir -p /home/deployer/spa_backend/releases/20170315114755/config /home/deployer/spa_backend/releases/20170315114755
+  INFO [a3c1639e] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [0a092a4e] Running [ -L /home/deployer/spa_backend/releases/20170315114755/config/database.yml ] as deployer@207.154.238.124
+ DEBUG [0a092a4e] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/config/database.yml ]
+ DEBUG [0a092a4e] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [1d5563b0] Running [ -f /home/deployer/spa_backend/releases/20170315114755/config/database.yml ] as deployer@207.154.238.124
+ DEBUG [1d5563b0] Command: [ -f /home/deployer/spa_backend/releases/20170315114755/config/database.yml ]
+ DEBUG [1d5563b0] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [dbb939ec] Running /usr/bin/env rm /home/deployer/spa_backend/releases/20170315114755/config/database.yml as deployer@207.154.238.124
+ DEBUG [dbb939ec] Command: /usr/bin/env rm /home/deployer/spa_backend/releases/20170315114755/config/database.yml
+  INFO [dbb939ec] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [dbe0f72d] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/config/database.yml /home/deployer/spa_backend/releases/20170315114755/config/database.yml as deployer@207.154.238.124
+ DEBUG [dbe0f72d] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/config/database.yml /home/deployer/spa_backend/releases/20170315114755/config/database.yml
+  INFO [dbe0f72d] Finished in 0.144 seconds with exit status 0 (successful).
+ DEBUG [bdf0257f] Running [ -L /home/deployer/spa_backend/releases/20170315114755/.env ] as deployer@207.154.238.124
+ DEBUG [bdf0257f] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/.env ]
+ DEBUG [bdf0257f] Finished in 0.073 seconds with exit status 1 (failed).
+ DEBUG [7cab3e39] Running [ -f /home/deployer/spa_backend/releases/20170315114755/.env ] as deployer@207.154.238.124
+ DEBUG [7cab3e39] Command: [ -f /home/deployer/spa_backend/releases/20170315114755/.env ]
+ DEBUG [7cab3e39] Finished in 0.067 seconds with exit status 1 (failed).
+  INFO [adde25a3] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/.env /home/deployer/spa_backend/releases/20170315114755/.env as deployer@207.154.238.124
+ DEBUG [adde25a3] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/.env /home/deployer/spa_backend/releases/20170315114755/.env
+  INFO [adde25a3] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [c842f09b] Running /usr/bin/env mkdir -p /home/deployer/spa_backend/releases/20170315114755 /home/deployer/spa_backend/releases/20170315114755/tmp /home/deployer/spa_backend/releases/20170315114755/public /home/deployer/spa_backend/releases/20170315114755/vendor as deployer@207.154.238.124
+ DEBUG [c842f09b] Command: /usr/bin/env mkdir -p /home/deployer/spa_backend/releases/20170315114755 /home/deployer/spa_backend/releases/20170315114755/tmp /home/deployer/spa_backend/releases/20170315114755/public /home/deployer/spa_backend/releases/20170315114755/vendor
+  INFO [c842f09b] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [ee0f1060] Running [ -L /home/deployer/spa_backend/releases/20170315114755/log ] as deployer@207.154.238.124
+ DEBUG [ee0f1060] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/log ]
+ DEBUG [ee0f1060] Finished in 0.068 seconds with exit status 1 (failed).
+ DEBUG [bbb9d671] Running [ -d /home/deployer/spa_backend/releases/20170315114755/log ] as deployer@207.154.238.124
+ DEBUG [bbb9d671] Command: [ -d /home/deployer/spa_backend/releases/20170315114755/log ]
+ DEBUG [bbb9d671] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [ef571ee2] Running /usr/bin/env rm -rf /home/deployer/spa_backend/releases/20170315114755/log as deployer@207.154.238.124
+ DEBUG [ef571ee2] Command: /usr/bin/env rm -rf /home/deployer/spa_backend/releases/20170315114755/log
+  INFO [ef571ee2] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [e4e97b89] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/log /home/deployer/spa_backend/releases/20170315114755/log as deployer@207.154.238.124
+ DEBUG [e4e97b89] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/log /home/deployer/spa_backend/releases/20170315114755/log
+  INFO [e4e97b89] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [e83a31d1] Running [ -L /home/deployer/spa_backend/releases/20170315114755/tmp/pids ] as deployer@207.154.238.124
+ DEBUG [e83a31d1] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/tmp/pids ]
+ DEBUG [e83a31d1] Finished in 0.068 seconds with exit status 1 (failed).
+ DEBUG [14e93de9] Running [ -d /home/deployer/spa_backend/releases/20170315114755/tmp/pids ] as deployer@207.154.238.124
+ DEBUG [14e93de9] Command: [ -d /home/deployer/spa_backend/releases/20170315114755/tmp/pids ]
+ DEBUG [14e93de9] Finished in 0.064 seconds with exit status 1 (failed).
+  INFO [2c59b57e] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/tmp/pids /home/deployer/spa_backend/releases/20170315114755/tmp/pids as deployer@207.154.238.124
+ DEBUG [2c59b57e] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/tmp/pids /home/deployer/spa_backend/releases/20170315114755/tmp/pids
+  INFO [2c59b57e] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [37193993] Running [ -L /home/deployer/spa_backend/releases/20170315114755/tmp/cache ] as deployer@207.154.238.124
+ DEBUG [37193993] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/tmp/cache ]
+ DEBUG [37193993] Finished in 0.065 seconds with exit status 1 (failed).
+ DEBUG [3a2389ff] Running [ -d /home/deployer/spa_backend/releases/20170315114755/tmp/cache ] as deployer@207.154.238.124
+ DEBUG [3a2389ff] Command: [ -d /home/deployer/spa_backend/releases/20170315114755/tmp/cache ]
+ DEBUG [3a2389ff] Finished in 0.067 seconds with exit status 1 (failed).
+  INFO [7584db6a] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/tmp/cache /home/deployer/spa_backend/releases/20170315114755/tmp/cache as deployer@207.154.238.124
+ DEBUG [7584db6a] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/tmp/cache /home/deployer/spa_backend/releases/20170315114755/tmp/cache
+  INFO [7584db6a] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [3f4daea1] Running [ -L /home/deployer/spa_backend/releases/20170315114755/tmp/sockets ] as deployer@207.154.238.124
+ DEBUG [3f4daea1] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/tmp/sockets ]
+ DEBUG [3f4daea1] Finished in 0.064 seconds with exit status 1 (failed).
+ DEBUG [a0ac2196] Running [ -d /home/deployer/spa_backend/releases/20170315114755/tmp/sockets ] as deployer@207.154.238.124
+ DEBUG [a0ac2196] Command: [ -d /home/deployer/spa_backend/releases/20170315114755/tmp/sockets ]
+ DEBUG [a0ac2196] Finished in 0.067 seconds with exit status 1 (failed).
+  INFO [a53aaef2] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/tmp/sockets /home/deployer/spa_backend/releases/20170315114755/tmp/sockets as deployer@207.154.238.124
+ DEBUG [a53aaef2] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/tmp/sockets /home/deployer/spa_backend/releases/20170315114755/tmp/sockets
+  INFO [a53aaef2] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [51df3acf] Running [ -L /home/deployer/spa_backend/releases/20170315114755/public/system ] as deployer@207.154.238.124
+ DEBUG [51df3acf] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/public/system ]
+ DEBUG [51df3acf] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [5f8c119b] Running [ -d /home/deployer/spa_backend/releases/20170315114755/public/system ] as deployer@207.154.238.124
+ DEBUG [5f8c119b] Command: [ -d /home/deployer/spa_backend/releases/20170315114755/public/system ]
+ DEBUG [5f8c119b] Finished in 0.068 seconds with exit status 1 (failed).
+  INFO [45e26d0a] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/public/system /home/deployer/spa_backend/releases/20170315114755/public/system as deployer@207.154.238.124
+ DEBUG [45e26d0a] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/public/system /home/deployer/spa_backend/releases/20170315114755/public/system
+  INFO [45e26d0a] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG [57d33256] Running [ -L /home/deployer/spa_backend/releases/20170315114755/vendor/bunble ] as deployer@207.154.238.124
+ DEBUG [57d33256] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/vendor/bunble ]
+ DEBUG [57d33256] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [71aaac6b] Running [ -d /home/deployer/spa_backend/releases/20170315114755/vendor/bunble ] as deployer@207.154.238.124
+ DEBUG [71aaac6b] Command: [ -d /home/deployer/spa_backend/releases/20170315114755/vendor/bunble ]
+ DEBUG [71aaac6b] Finished in 0.064 seconds with exit status 1 (failed).
+  INFO [0ba38a80] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/vendor/bunble /home/deployer/spa_backend/releases/20170315114755/vendor/bunble as deployer@207.154.238.124
+ DEBUG [0ba38a80] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/vendor/bunble /home/deployer/spa_backend/releases/20170315114755/vendor/bunble
+  INFO [0ba38a80] Finished in 0.073 seconds with exit status 0 (successful).
+ DEBUG [73c3c194] Running [ -L /home/deployer/spa_backend/releases/20170315114755/public/assets ] as deployer@207.154.238.124
+ DEBUG [73c3c194] Command: [ -L /home/deployer/spa_backend/releases/20170315114755/public/assets ]
+ DEBUG [73c3c194] Finished in 0.089 seconds with exit status 1 (failed).
+ DEBUG [f8c2da71] Running [ -d /home/deployer/spa_backend/releases/20170315114755/public/assets ] as deployer@207.154.238.124
+ DEBUG [f8c2da71] Command: [ -d /home/deployer/spa_backend/releases/20170315114755/public/assets ]
+ DEBUG [f8c2da71] Finished in 0.073 seconds with exit status 1 (failed).
+  INFO [37ddb32c] Running /usr/bin/env ln -s /home/deployer/spa_backend/shared/public/assets /home/deployer/spa_backend/releases/20170315114755/public/assets as deployer@207.154.238.124
+ DEBUG [37ddb32c] Command: /usr/bin/env ln -s /home/deployer/spa_backend/shared/public/assets /home/deployer/spa_backend/releases/20170315114755/public/assets
+  INFO [37ddb32c] Finished in 0.083 seconds with exit status 0 (successful).
+ DEBUG [ac524c36] Running if test ! -d /home/deployer/spa_backend/releases/20170315114755; then echo "Directory does not exist '/home/deployer/spa_backend/releases/20170315114755'" 1>&2; false; fi as deployer@207.154.238.124
+ DEBUG [ac524c36] Command: if test ! -d /home/deployer/spa_backend/releases/20170315114755; then echo "Directory does not exist '/home/deployer/spa_backend/releases/20170315114755'" 1>&2; false; fi
+ DEBUG [ac524c36] Finished in 0.065 seconds with exit status 0 (successful).
+ DEBUG [8845eeb6] Running ~/.rvm/bin/rvm default do bundle check --path /home/deployer/spa_backend/shared/bundle as deployer@207.154.238.124
+ DEBUG [8845eeb6] Command: cd /home/deployer/spa_backend/releases/20170315114755 && ~/.rvm/bin/rvm default do bundle check --path /home/deployer/spa_backend/shared/bundle
+ DEBUG [8845eeb6] 	Bundler can't satisfy your Gemfile's dependencies.
+ DEBUG [8845eeb6] 	Install missing gems with `bundle install`.
+ DEBUG [8845eeb6] Finished in 0.744 seconds with exit status 1 (failed).
+  INFO [9685f5ae] Running ~/.rvm/bin/rvm default do bundle install --path /home/deployer/spa_backend/shared/bundle --without development test --deployment --quiet as deployer@207.154.238.124
+ DEBUG [9685f5ae] Command: cd /home/deployer/spa_backend/releases/20170315114755 && ~/.rvm/bin/rvm default do bundle install --path /home/deployer/spa_backend/shared/bundle --without development test --deployment --quiet
+ DEBUG [9685f5ae] 	You are trying to install in deployment mode after changing
+your Gemfile. Run `bundle install` elsewhere and add the
+updated Gemfile.lock to version control.
+
+the dependencies in your gemfile changed
+
+
+You have added to the Gemfile:
+* dotenv-rails
+
+You have deleted from the Gemfile:
+* dotenv-deployment
