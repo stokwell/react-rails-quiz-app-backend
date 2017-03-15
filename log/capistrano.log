@@ -5022,3 +5022,27 @@ You have deleted from the Gemfile:
   INFO [6569407a] Running /usr/bin/env echo "Branch master (at 38d2d20d7ba4b299bc7a8d5fa0b7e7a33304eb9e) deployed as release 20170315125825 by vitalylyapunov" >> /home/deployer/spa_backend/revisions.log as deployer@207.154.238.124
  DEBUG [6569407a] Command: cd /home/deployer/spa_backend/releases && /usr/bin/env echo "Branch master (at 38d2d20d7ba4b299bc7a8d5fa0b7e7a33304eb9e) deployed as release 20170315125825 by vitalylyapunov" >> /home/deployer/spa_backend/revisions.log
   INFO [6569407a] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-15 14:11:08 +0100 cap production deploy:seed
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5ea9339b] Running [ -d ~/.rvm ] as deployer@207.154.238.124
+ DEBUG [5ea9339b] Command: [ -d ~/.rvm ]
+ DEBUG [5ea9339b] Finished in 1.261 seconds with exit status 0 (successful).
+ DEBUG [20a89ca5] Running ~/.rvm/bin/rvm version as deployer@207.154.238.124
+ DEBUG [20a89ca5] Command: ~/.rvm/bin/rvm version
+ DEBUG [20a89ca5] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [20a89ca5] Finished in 1.047 seconds with exit status 0 (successful).
+ DEBUG [a6f3e1f5] Running ~/.rvm/bin/rvm current as deployer@207.154.238.124
+ DEBUG [a6f3e1f5] Command: ~/.rvm/bin/rvm current
+ DEBUG [a6f3e1f5] 	ruby-2.3.1
+ DEBUG [a6f3e1f5] Finished in 1.108 seconds with exit status 0 (successful).
+ DEBUG [0d1e3436] Running ~/.rvm/bin/rvm default do ruby --version as deployer@207.154.238.124
+ DEBUG [0d1e3436] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [0d1e3436] 	ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-linux]
+ DEBUG [0d1e3436] Finished in 0.522 seconds with exit status 0 (successful).
+ DEBUG [8d80d6a7] Running if test ! -d /home/deployer/spa_backend/current; then echo "Directory does not exist '/home/deployer/spa_backend/current'" 1>&2; false; fi as deployer@207.154.238.124
+ DEBUG [8d80d6a7] Command: if test ! -d /home/deployer/spa_backend/current; then echo "Directory does not exist '/home/deployer/spa_backend/current'" 1>&2; false; fi
+ DEBUG [8d80d6a7] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [af9480b2] Running ~/.rvm/bin/rvm default do bundle exec rake db:seed as deployer@207.154.238.124
+ DEBUG [af9480b2] Command: cd /home/deployer/spa_backend/current && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:seed )
+  INFO [af9480b2] Finished in 2.581 seconds with exit status 0 (successful).
