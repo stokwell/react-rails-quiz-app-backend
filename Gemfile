@@ -20,6 +20,8 @@ gem 'dotenv-rails', require: 'dotenv/rails'
 
 gem 'unicorn'
 
+gem 'carrierwave'
+
 
 group :development, :test do
   gem 'rspec-rails'
