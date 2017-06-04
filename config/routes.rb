@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     scope module: :v1 do
       resources :posts
       resources :events
+      resources :subscribings
     end
   end
 
