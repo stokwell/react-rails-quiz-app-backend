@@ -1,7 +1,8 @@
 class Api::V1::EventsController < ApplicationController
 
 	def index
-      @events = Event.all.order(:id).reverse
+    @events = Event.all.order(:id).reverse
+    @categories = Category.all
 	  respond_with @events
 	end
 
@@ -11,7 +12,7 @@ class Api::V1::EventsController < ApplicationController
 	end
 
 	def create
-	  @event = Event.new(post_params)
+	  @event = Event.new(event_params)
 	if @event.save
 	  render json: @event, status: 201
 	else
@@ -29,8 +30,8 @@ class Api::V1::EventsController < ApplicationController
 	private
 
 	def event_params
-	  params.require(:event).permit(:title, :desctiption, :cover)
+	  params.require(:event).permit(:title, :description, :cover  )
 	end
-  
+
 end
 

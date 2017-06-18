@@ -20,7 +20,13 @@ gem 'dotenv-rails', require: 'dotenv/rails'
 
 gem 'unicorn'
 
+gem 'carrierwave-base64'
+
 gem 'carrierwave'
+
+gem 'jbuilder'
+
+gem "paperclip"
 
 
 group :development, :test do
@@ -28,11 +34,11 @@ group :development, :test do
   gem 'factory_girl_rails'
 end
 
-group :test do 
+group :test do
   gem 'shoulda-matchers', require: false
 end
 
-group :development do 
+group :development do
   gem 'capistrano', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', require: false

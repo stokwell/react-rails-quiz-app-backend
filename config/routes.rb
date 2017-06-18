@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :posts
       resources :events
       resources :subscribings
+      resources :categories
     end
   end
 
