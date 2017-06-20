@@ -21,12 +21,13 @@ gem 'dotenv-rails', require: 'dotenv/rails'
 gem 'unicorn'
 
 gem 'carrierwave-base64'
-
 gem 'carrierwave'
 
-gem 'jbuilder'
-
 gem "paperclip"
+
+gem 'bcrypt', '~> 3.1.7'
+gem 'jwt'
+gem 'simple_command'
 
 
 group :development, :test do

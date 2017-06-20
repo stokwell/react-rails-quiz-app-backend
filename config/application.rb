@@ -18,6 +18,7 @@ Bundler.require(*Rails.groups)
 
 module SpaBackendApi
   class Application < Rails::Application
+    config.autoload_paths << Rails.root.join('lib')
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
@@ -33,7 +34,7 @@ module SpaBackendApi
                        routing_specs: false,
                        request_specs: true,
                        controller_specs: false
-      q.fixture_replacement :factory_girl, dir: 'spec/factories' 
+      q.fixture_replacement :factory_girl, dir: 'spec/factories'
 
     end
   end

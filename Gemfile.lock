@@ -46,6 +46,7 @@ GEM
     airbrussh (1.1.2)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (7.1.4)
+    bcrypt (3.1.11)
     builder (3.2.3)
     capistrano (3.8.0)
       airbrussh (>= 1.0.0)
@@ -90,10 +91,8 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     i18n (0.8.1)
-    jbuilder (2.7.0)
-      activesupport (>= 4.2.0)
-      multi_json (>= 1.2)
     jsonapi-renderer (0.1.2)
+    jwt (1.5.6)
     kgio (2.11.0)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -109,7 +108,6 @@ GEM
     mimemagic (0.3.2)
     mini_portile2 (2.1.0)
     minitest (5.10.1)
-    multi_json (1.12.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
@@ -176,6 +174,7 @@ GEM
     rspec-support (3.5.0)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
+    simple_command (0.0.9)
     spring (2.0.1)
       activesupport (>= 4.2)
     sprockets (3.7.1)
@@ -204,6 +203,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  bcrypt (~> 3.1.7)
   capistrano
   capistrano-bundler
   capistrano-rails
@@ -214,7 +214,7 @@ DEPENDENCIES
   dotenv
   dotenv-rails
   factory_girl_rails
-  jbuilder
+  jwt
   listen
   paperclip
   pg
@@ -223,6 +223,7 @@ DEPENDENCIES
   responders
   rspec-rails
   shoulda-matchers
+  simple_command
   spring
   unicorn
 
