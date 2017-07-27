@@ -1,0 +1,31 @@
+sose2017:
+  current: true
+  start: 28.04.2017
+  end: 22.07.2017
+  holidays:
+    - start: 14.04.2017
+      end: 14.04.2017
+    - start: 17.04.2017
+      end: 17.04.2017
+    - start: 01.05.2017
+      end: 01.05.2017
+    - start: 25.05.2017
+      end: 25.05.2017
+    - start: 05.06.2017
+      end: 05.06.2017
+
+wise20172018:
+  current: false
+  start: 16.10.2017
+  end: 17.02.2018
+  holidays:
+    - start: 27.12.2017
+      end: 06.01.2018
+    - start: 03.10.2017
+      end: 03.10.2017
+    - start: 31.10.2017
+      end: 31.10.2017
+
+
+
+

@@ -1,6 +1,10 @@
 class ApplicationController < ActionController::API
-  respond_to :json
+  include ActionController::MimeResponds
+
   before_action :authenticate_request
+
+  respond_to :json
+
   attr_reader :current_user
 
   private

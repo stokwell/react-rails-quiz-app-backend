@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170619053204) do
+ActiveRecord::Schema.define(version: 20170726154658) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "answers", force: :cascade do |t|
+    t.string   "body"
+    t.integer  "question_id"
+    t.string   "comment"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.boolean  "right",       default: false
+    t.index ["question_id"], name: "index_answers_on_question_id", using: :btree
+  end
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -31,13 +41,18 @@ ActiveRecord::Schema.define(version: 20170619053204) do
   create_table "events", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "cover"
-    t.string   "cover_file_name"
-    t.string   "cover_content_type"
-    t.integer  "cover_file_size"
-    t.datetime "cover_updated_at"
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_events_on_user_id", using: :btree
+  end
+
+  create_table "events_categories", id: false, force: :cascade do |t|
+    t.integer "event_id"
+    t.integer "category_id"
+    t.index ["category_id"], name: "index_events_categories_on_category_id", using: :btree
+    t.index ["event_id"], name: "index_events_categories_on_event_id", using: :btree
   end
 
   create_table "posts", force: :cascade do |t|
@@ -46,6 +61,14 @@ ActiveRecord::Schema.define(version: 20170619053204) do
     t.string   "username"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.string   "body"
+    t.integer  "test_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["test_id"], name: "index_questions_on_test_id", using: :btree
   end
 
   create_table "semesters", force: :cascade do |t|
@@ -59,6 +82,14 @@ ActiveRecord::Schema.define(version: 20170619053204) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tests", force: :cascade do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "category"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
@@ -67,4 +98,7 @@ ActiveRecord::Schema.define(version: 20170619053204) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "answers", "questions"
+  add_foreign_key "events", "users"
+  add_foreign_key "questions", "tests"
 end
