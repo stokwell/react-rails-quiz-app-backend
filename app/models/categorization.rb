@@ -1,4 +1,4 @@
 class Categorization < ApplicationRecord
   belongs_to :event
-  belogns_to :category
+  belongs_to :category
 end

@@ -8,5 +8,4 @@ Category.create([
   { name: 'Party' },
   { name: 'Meeting' },
   { name: 'Vortrag'}
-
 ])
