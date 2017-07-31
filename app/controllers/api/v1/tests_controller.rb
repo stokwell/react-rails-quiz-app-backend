@@ -25,6 +25,12 @@ class Api::V1::TestsController < ApplicationController
     end
   end
 
+  def destroy
+    @test = Test.find(params[:id])
+    @test.destroy
+    render json: @test
+  end
+
   private
 
   def test_params
