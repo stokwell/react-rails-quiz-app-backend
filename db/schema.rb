@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20170726154658) do
     t.string   "comment"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
-    t.boolean  "right",       default: false
+    t.boolean  "right",      default: false
     t.index ["question_id"], name: "index_answers_on_question_id", using: :btree
   end
 
