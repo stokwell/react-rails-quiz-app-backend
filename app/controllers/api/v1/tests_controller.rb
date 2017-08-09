@@ -25,6 +25,15 @@ class Api::V1::TestsController < ApplicationController
     end
   end
 
+  def update
+    @test = Test.find(params[:id])
+    if @test.update_attributes(test_params)
+      render json: @test, status: 201
+    else
+      render json: { errors: @test.errors.full_messages }, status: 422
+    end
+  end
+
   def destroy
     @test = Test.find(params[:id])
     @test.destroy
