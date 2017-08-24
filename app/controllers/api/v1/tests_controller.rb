@@ -43,7 +43,7 @@ class Api::V1::TestsController < ApplicationController
   private
 
   def test_params
-    params.require(:test).permit(:title, :description, :category)
+    params.require(:test).permit(:title, :description, :category, :cover)
   end
 
 end
